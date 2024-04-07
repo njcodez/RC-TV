@@ -1,15 +1,11 @@
-import Link from "next/link";
+import Header from './_components/Header';
+import Main from './_components/Main';
 
-// import { CreatePost } from "~/app/_components/create-post";
-// import { getServerAuthSession } from "~/server/auth";
-// import { api } from "~/trpc/server";
-
-export default async function Home() {
-
-
+export default function Home() {
   return (
-    <main>
-      Hello
-    </main>
+    <div className="bg-cover bg-fixed bg-center min-h-screen" style={{ backgroundImage: "url('/header.png')" }}>
+      <Header />
+      <Main />
+    </div>
   );
 }
